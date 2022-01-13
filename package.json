@@ -1,7 +1,7 @@
 {
   "name": "commercevue",
   "version": "1.0.0",
-  "description": "Responsive ecommerce template built with Vue.js and Nuxt.js plus Bulma",
+  "description": "VueCommerce Vue.js, Nuxt&Bulma",
   "author": "Aris Priyanto <aris.22002.priyanto@gmail.com>",
   "scripts": {
     "dev": "nuxt",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ivanlori/Vuemmerce.git"
+    "url": "https://github.com/aris-presley-aja/"
   },
   "keywords": [
     "css",

@@ -1,6 +1,8 @@
 <template>
+
   <div>
-    <div class="card-image">
+
+    <!-- <div class="card-image">
       <figure class="image is-4by3">
         <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
       </figure>
@@ -52,16 +54,16 @@
           <div class="buttons">
             <button class="button is-primary" v-if="!product.isAddedToCart" @click="addToCart(product.id)">{{ addToCartLabel }}</button>
             <button class="button is-text" v-if="product.isAddedToCart" @click="removeFromCart(product.id, false)">{{ removeFromCartLabel }}</button>
-          </div>
+          </div> -->
            <!-- <div class="select is-rounded is-small">
             <select @change="onSelectQuantity(product.id)" v-model="selected">
               <option v-for="quantity in quantityArray" :value="quantity">{{ quantity }}</option>
             </select>
           </div> -->
-        </div>
-      </div>
+        <!-- </div>
+      </div> -->
     </div>
-    <nuxt-link
+    <!-- <nuxt-link
       class="details"
       :to="{
         name: 'product_detail-id',
@@ -75,42 +77,42 @@
         }
       }"
     >
-    </nuxt-link>
-  </div>
+    </nuxt-link> -->
+  <!-- </div> -->
 </template>
 
 <script>
 export default {
-  name: 'products',
-  props: ['product'],
+  // name: 'products',
+  // props: ['product'],
 
   data () {
     return {
-      addToCartLabel: 'Add to cart',
-      viewDetailsLabel: 'Details',
-      removeFromCartLabel: 'Remove from cart',
-      addToFavouriteLabel: 'Add to favourite',
-      removeFromFavouriteLabel: 'Remove from favourite',
-      selected: 1,
-      quantityArray: []
+      // addToCartLabel: 'Add to cart',
+      // viewDetailsLabel: 'Details',
+      // removeFromCartLabel: 'Remove from cart',
+      // addToFavouriteLabel: 'Add to favourite',
+      // removeFromFavouriteLabel: 'Remove from favourite',
+      // selected: 1,
+      // quantityArray: []
     }
   },
 
-  mounted () {
-    for (let i = 1; i <= 20; i++) {
-      this.quantityArray.push(i);
-    }
+  // mounted () {
+  //   for (let i = 1; i <= 20; i++) {
+  //     this.quantityArray.push(i);
+  //   }
 
-    if (this.$props.product.quantity > 1) {
-      this.selected = this.$props.product.quantity;
-    }
-  },
+  //   // if (this.$props.product.quantity > 1) {
+  //   //   this.selected = this.$props.product.quantity;
+  //   // }
+  // },
 
-  computed: {
-    isUserLogged () {
-      return this.$store.getters.isUserLoggedIn;
-    }
-  },
+  // computed: {
+  //   isUserLogged () {
+  //     return this.$store.getters.isUserLoggedIn;
+  //   }
+  // },
 
   methods: {
     addToCart (id) {

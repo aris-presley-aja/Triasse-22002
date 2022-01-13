@@ -1,12 +1,10 @@
-# Vuemmerce - Ecommerce Template
+# Vuemmerce - Ecommerce Vue,nuxt&Bulma
 
-Responsive ecommerce template built with Vue.js and Nuxt.js
+VueCommerce Vue, Nuxt&Bulma
 
-[![Build Status](https://travis-ci.org/ivanlori/Vuemmerce.svg)](https://travis-ci.org/ivanlori/Vuemmerce)
-[![devDependency Status](https://david-dm.org/ivanlori/Vuemmerce/dev-status.svg)](https://david-dm.org/ivanlori/Vuemmerce#info=devDependencies)
 [![vue](https://img.shields.io/badge/vue-2.6.10-brightgreen.svg)](https://github.com/vuejs/vue)
-[![GitHub license](https://img.shields.io/github/license/ivanlori/Vuemmerce.svg)](https://github.com/ivanlori/Vuemmerce/blob/master/LICENSE)
-[![](https://img.shields.io/twitter/url/https/github.com/ivanlori/Vuemmerce.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fivanlori%2FVuemmerce)
+)
+
 
 ---
 
@@ -14,7 +12,7 @@ Responsive ecommerce template built with Vue.js and Nuxt.js
 
 ```
 # clone repository
-git clone https://github.com/ivanlori/Vuemmerce.git
+git clone https://github.com/aris-presley-aja/
 
 # install dependencies
 yarn install
@@ -33,13 +31,13 @@ yarn build
 
 ![Vuemmerce - Ecommerce Template](screen.png "Vuemmerce - Ecommerce Browser Preview")
 
-**[Template Demo](https://vuemmerce-git-master.ivanlori.now.sh/)**
+**[Template Demo](https://vuemmerce-git-master.Aris.now.sh/)**
 
 ---
 
 ## Authors
 
-- **Ivan Lori** - _Initial work_ - [ivanlori](https://github.com/ivanlori)
+- **Aris Priyanto** - _Initial work_ - [ArisPriyanto](https://github.com/aris-presley-aja/)
 
 ---
 
@@ -57,7 +55,7 @@ Follow the steps below.
 4. Commit your changes
 5. Open a pull request
 
-If you have any questions, feel free to email me at [ivan.lori@protonmail.com](mailto:ivan.lori@protonmail.com).
+If you have any questions, feel free to email me at [aris.22002.priyanto@gmail.com](mailto:aris.22002.priyanto@gmail.com).
 
 ---
 

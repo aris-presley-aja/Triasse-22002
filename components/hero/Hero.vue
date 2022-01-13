@@ -2,7 +2,7 @@
 <!--  -->
 
 <!--  -->
-  <div class="hero is-medium is-bold">
+  <div class="hero is-small is-bold">
                 <a role="button" class="navbar-burger burger" @click="isMenuOpen = !isMenuOpen" aria-label="menu" aria-expanded="false">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
@@ -19,7 +19,7 @@
         <ul>
           <li class="">
                                               <span>      <nuxt-link :to="{ name: 'index' }" class="navbar-item">
-                                    <h3 class="title is-3 is-flex-mobile"></h3>
+                                    <h3 class="titles is-3 is-flex-mobile"></h3>
                                             </nuxt-link> </span>
           </li>
           <li>
@@ -76,9 +76,17 @@
                                                     left: 10%;
                                                     top: 85%;
                                                     z-index: 1;">
+
                                         <div class="">
-                                                          <div class="pilih-jenis">
-                                                  <i>Pilih Jenis Pemeriksaaan</i>
+                  <div class="pilih-jenis">
+                       <b><i>Pilih Jenis Pemeriksaaan</i></b>
+
+                                                      </div>
+                                                       <div class="pilih-jeniskanan">
+
+                                                        <figure class="image is-128x128">
+                        <img width="10%" height="auto" src="../../static/img-doctor.svg" alt="Placeholder image">
+                      </figure>
                                                       </div>
                                         </div>
                                         <div class="card-content">
@@ -90,7 +98,7 @@
 
                                             </div>
                                           </div>
-                                                      <table class="table" width="100%">
+                                                      <table class="naik" width="100%">
                                                                   <thead>
                                                                       <tr>
 
@@ -103,27 +111,25 @@
                                                                   </thead>
                                                                       <tfoot>
                                                                                 <tr>
-                                                                                                    <td width="33%">
-                                                                                                                                <div class="dropdown is-active">
+                                                                                            <td width="33%">
+                                                                                                <div class="class=control">
 
-                                                                                                  <div class="dropdown-trigger">
-
-
-                                                                                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                                                                                    <i class="fas fa-map-marker-alt" style="font-size:1.4em;color:blue"></i>
+                                                                                                  <div class="">
+                                                                                                    <button>
+                                                                                                      <i class="fa fa-map-marker" style="font-size:1.4em;color:blue"></i>
                                                                                                       <span>Provinsi</span>
                                                                                                       <span class="icon is-small">
                                                                                                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                                                                                                       </span>
                                                                                                     </button>
                                                                                                   </div>
-                                                                                                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                                                  <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
+
+                                                                                                    </div> -->
+
 
                                                                                                 </div>
-
-
-                                                                                      </div>
-                                                                                                      </td>
+                                                                                            </td>
                                                                                             <td width="33%">
                                                                                                 <div class="class=control">
 
@@ -137,29 +143,31 @@
                                                                                                     </button>
                                                                                                   </div>
                                                                                                   <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
-
+                                                                                                    <i class="fas fa-stethoscope" style="font-size:1.4em;color:blue"></i>
                                                                                                     </div> -->
 
 
-                                                                                      </div>
+                                                                                                </div>
                                                                                             </td>
-                                                                                        <td width="33%">
-                                                                                                                      <div class="control">
+                                                                                            <td width="33%">
+                                                                                                <div class="class=control">
 
                                                                                                   <div class="">
-                                                                                                    <button class="button" aria-haspopup="false" aria-controls="dropdown-menu">
-                                                                                                      <i class="fas fa-stethoscope" style="font-size:1.4em;color:blue"></i>
-                                                                                                      <span>Pilih Jenis Pemeriksaan</span>
+                                                                                                    <button>
+                                                                                                          <i class="fas fa-stethoscope" style="font-size:1.4em;color:blue"></i>
+                                                                                                      <span>Kota / Kabupaten</span>
                                                                                                       <span class="icon is-small">
-                                                                                                        <i class="" aria-hidden="true"></i>
+                                                                                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
                                                                                                       </span>
                                                                                                     </button>
                                                                                                   </div>
+                                                                                                  <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                                                    <i class="fas fa-stethoscope" style="font-size:1.4em;color:blue"></i>
+                                                                                                    </div> -->
 
 
-
-                                                                                      </div>
-                                                                                        </td>
+                                                                                                </div>
+                                                                                            </td>
                                                                                 </tr>
                                                                                 <tr>
 
@@ -168,7 +176,7 @@
 
                                                                                                             position: absolute;
                                                                                                               left: 70%;
-                                                                                                              top: 85%;
+                                                                                                              top: 110%;
                                                                                                               ">
 
                                                                                             <button class="button2"> Cari lab</button>
@@ -184,99 +192,293 @@
                                           <!--  -->
 
                                             </div>
-                                      </div>
+                  </div>
                           <!--  -->
 
       </div>
     </div>
-                    <div align="center"   style="background-color: #daf0fff8;">
+                    <div align="center" class="turun"  style="background-color: #daf0fff8;">
                             <h1><b>Mengapa harus Triasse ?</b></h1>
                       <p></p>
                       <h2> Proin Egestas eu dui vestibulum. Suspendisse sit amet sem non nunc tempor tincidunt.</h2>
 
-<!--  -->
+                                    <!--  -->
+                                  <!--  -->
 
-
-                                                                    <div class="card-content">
+                                  <!--  -->
+                        <div class="card-content">
                                                                       <div class="">
                                                                         <figure class="">
                                                                           <img  width="38%" height="38%" left="50%" align="left" src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
                                                                         </figure>
                                                                       </div>
                                                                     </div>
-                          <div class="card-content">
+                        <div class="cards">
+                          <div width="38%" height="38%" left="50%" align="center" class="card-contents">
 
-                            <div class="content">
-
-                              <b class="ratakiri">Jaminan harga terbaik</b>
-
-
-                                  <p class="ratakiribawah">
-                                                             <img src="https://bulma.io/images/placeholders/48x48.png">
-                                harga kompetitif di laboratorium terbesar dan terpercaya di indonesia seperti Prodia, <br>Kimia Farma, Parahita, GS Lab & Biotest
-                                    </p>
-
-                            </div>
-
-                            <div class="content">
-
-                              <b class="ratakiri">layanan home service</b>
+                                                                                  <div class="columns is-mobile is-left">
+                                                        <div class="columns is-narrow">
+                                                          <img class="imgratakiri" height="25em" src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                        </div>
+                                                        <div class="ratakiri column has-text-left">
+                                                          <span class="title">Jaminan harga terbaik</span><br>
+                                                          <span class=""><h2>harga kompetitif di laboratorium terbesar dan terpercaya di indonesia seperti Prodia, Kimia Farma, Parahita, GS Lab & Biotest</h2></span>
+                                                        </div>
+                                                      </div>
 
 
-                                  <p class="ratakiribawah">
-                                                             <img src="https://bulma.io/images/placeholders/48x48.png">
-                                harga kompetitif di laboratorium terbesar dan terpercaya di indonesia seperti Prodia, Kimia Farma, Parahita, GS Lab & Biotest
-                                    </p>
+                                                                                  <div class="columns is-mobile is-left">
+                                                        <div class="columns">
+                                                          <img class="imgratakiri" top="-50%"  src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                        </div>
+                                                        <div class="ratakiri column has-text-left">
+                                                          <span class="title">Layanan home service</span><br>
+                                                          <span class="subtitle">Pemeriksaan bisa dilakukan dari rumah sendiri dengan layanan Home Service, petugas datang untuk<br> melakukan pengecekan dan tes</span>
+                                                        </div>
+                                                      </div>
 
-                            </div>
-                            <div class="content">
-                              <img src="https://bulma.io/images/placeholders/48x48.png">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                              <a href="#">#css</a> <a href="#">#responsive</a>
-                              <br>
-                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                            <div class="content">
-                              <img src="https://bulma.io/images/placeholders/48x48.png">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                              <a href="#">#css</a> <a href="#">#responsive</a>
-                              <br>
-                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
+
+                                                                                  <div class="columns is-mobile is-left">
+                                                        <div class="columns">
+                                                           <img class="imgratakiri" top="-50%" height="25em" src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                        </div>
+                                                        <div class="ratakiri column has-text-left">
+                                                          <span class="title">Cicilan 4x dengan bunga 0%</span><br>
+                                                          <span class="subtitle">Pembayaran paket pemeriksaan lebih ringan karena dap[at dicicil sampai dengan empat kali, dan tanpa bunga tambahan</span>
+                                                        </div>
+                                                      </div>
+
+
+                                                                                  <div class="columns is-mobile is-left mb-4">
+                                                        <div class="columns">
+                                                          <img class="imgratakiri" top="-50%" height="25em" src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                        </div>
+                                                        <div class="ratakiri column has-text-left">
+                                                          <span class="title">Jaminan harga terbaik</span><br>
+                                                          <span class="subtitle">harga kompetitif di laboratorium terbesar dan terpercaya di indonesia seperti Prodia, Kimia Farma, Parahita, GS Lab & Biotest</span>
+                                                        </div>
+                                                      </div>
+
+                            <!--  -->
+
+                            <!--  -->
                           </div>
 
-                        </div>
+                      </div>
+                  </div>
                                   <!--  -->
 
                     <!--  -->
 
 
-
-                      <table class="table"></table>
+<!--
+                      <table class="table"></table> -->
                     <!--  -->
 <!--  -->
-<div class="columns is-centered">
-  <div class="column is-half">
+
 
     <!-- Your card code: -->
-    <div class="card">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="../../static/480x480.png" alt="Placeholder image">
-        </figure>
+    <div class="container-cards turun2">
+      <div class="title">
+        <center>
+        <p>Lorem Ipsum Dolor Sit Amet</p>
+        <h2>Proin egestas eu dui in vestibulum. Suspendisse sit amet sem non nunc tincidunt.</h2>
+        </center>
       </div>
-      <div class="card-content">
-        <div class="content">
-            texte ici
-            <br>
-        </div>
-      </div>
-    </div>
 
-  </div>
-</div>
+
+        <div class="subtitle">
+                  <!-- konten kartu 6
+            <br> -->
+            <center>
+                                                    <div class="section">
+                                                      <!-- mulai -->
+                                                      <div class="barisan-kartu">
+                                                        <!-- separator kartu -->
+                                                        <div class="six-card is-centered">
+                                                          <div class="card is-centered">
+                                                            <div class="card-image">
+                                                              <img class="imgratakirienam" top="-20%" height="10em" src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                            </div>
+                                                            <div class="card-content ">
+                                                              <div class="media">
+                                                                <!-- <div class="media-left">
+                                                                  <figure class="image is-48x48">
+                                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                                  </figure>
+                                                                </div> -->
+                                                                <div class="media-contents">
+                                                                  <p class="title is-4"><b>Paket Medical Check-up Basic</b></p>
+                                                                  <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="contents">
+                                                                  <p> harga mulai dari</p>
+                                                                    <p class="harga-diskon"> Rp 4116.000</p>
+                                                                    <p style="color:blue">Rp 364.001</p>
+
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                                                          <!-- kartu 2 -->
+                                                        <div class="six-card">
+                                                          <div class="card">
+                                                            <div class="card-image">
+                                                    <img class="imgratakirienam" top="-50%" height="10em" src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                            </div>
+                                                            <div class="card-content">
+                                                              <div class="media">
+                                                                <!-- <div class="media-left">
+                                                                  <figure class="image is-48x48">
+                                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                                  </figure>
+                                                                </div> -->
+                                                                <div class="media-contents">
+                                                                  <p class="title is-4"><b>Paket Medical Check-up Silver</b></p>
+                                                                  <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="contents">
+                                                                  <p> harga mulai dari</p>
+                                                                    <p class="harga-diskon"> Rp 600.000</p>
+                                                                    <p style="color:blue">Rp 573.000</p>
+
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                                                          <!-- kartu 3 -->
+                                                        <div class="six-card">
+                                                          <div class="card">
+                                                            <div class="card-image">
+                                                     <img class="imgratakirienam" top="-20%" height="10em" src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                            </div>
+                                                            <div class="card-content">
+                                                              <div class="media">
+                                                                <!-- <div class="media-left">
+                                                                  <figure class="image is-48x48">
+                                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                                  </figure>
+                                                                </div> -->
+                                                                <div class="media-contents">
+                                                                  <p class="title is-4"><b>Paket Medical Check-up Gold</b></p>
+                                                                  <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="contents">
+                                                                  <p> harga mulai dari</p>
+                                                                    <p class="harga-diskon"> Rp 1.228.000</p>
+                                                                    <p style="color:blue">Rp 1.127.000</p>
+
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                                                          <!-- kartu 4 -->
+                                                        <div class="six-card">
+                                                          <div class="card">
+                                                            <div class="card-image">
+                                                    <img class="imgratakirienam" top="-50%" height="10em" src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                            </div>
+                                                            <div height="100%" class="card-content">
+                                                              <div class="media">
+                                                                <!-- <div class="media-left">
+                                                                  <figure class="image is-48x48">
+                                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                                  </figure>
+                                                                </div> -->
+                                                                <div class="media-contents">
+                                                                  <p class="title is-4"><b>Paket Skrining Diabetes Melitus</b></p>
+                                                                  <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="contents">
+                                                                  <p> harga mulai dari</p>
+                                                                    <p class="harga-diskon"> Rp 261.265</p>
+                                                                    <p style="color:blue">Rp 249.375</p>
+
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                                                          <!-- kartu 5 -->
+                                                        <div height="100%" class="six-card">
+                                                          <div class="card">
+                                                            <div class="card-image">
+                                                          <img class="imgratakirienam" top="-50%" height="10em" src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                            </div>
+                                                            <div class="card-content">
+                                                              <div class="media">
+                                                                <!-- <div class="media-left">
+                                                                  <figure class="image is-48x48">
+                                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                                  </figure>
+                                                                </div> -->
+                                                                <div class="media-contents">
+                                                                  <p class="title is-4"><b>Paket resiko penyakit jantung</b></p>
+                                                                  <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                                                                </div>
+                                                              </div>
+                                                                    <br>
+                                                              <div class="contents">
+                                                                  <p> harga mulai dari</p>
+                                                                    <p class="harga-diskon"> Rp 1.162.000</p>
+                                                                    <p style="color:blue">Rp 1.016.7250</p>
+
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                                                          <!-- kartu 6 -->
+                                                      <div class="six-card">
+                                                          <div class="card">
+                                                            <div class="card-image">
+                                                               <img class="imgratakirienam" top="-50%" height="10em" src="https://bulma.io/images/placeholders/96x96.png" alt="">
+                                                            </div>
+                                                            <div class="card-content">
+                                                              <div class="media">
+                                                                <!-- <div class="media-left">
+                                                                  <figure class="image is-48x48">
+                                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                                  </figure>
+                                                                </div> -->
+                                                                <div class="media-contents">
+                                                                  <p class="title is-4"><b>Paket TORCH</b></p>
+                                                                  <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                                                                </div>
+                                                              </div>
+                                                                <br><br>
+                                                              <div class="contents">
+                                                                  <p> harga mulai dari</p>
+                                                                    <p class="harga-diskon"> Rp 2.480.000</p>
+                                                                    <p style="color:blue">Rp 2.417.000</p>
+
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                  <!-- separator kartu -->
+              </div>
+            <!-- end -->
+          </div>
+        <!-- kartu 2 -->
+                    </center>
+            <!-- konten 6 kartu -->
+      </div>
+                  <table align="center" width="100%">
+                                              <tr align="center">
+                          <th colspan = "2"><img align="right" class="" width="50%" height="auto" top=" 0%" src="../../static/img-banner2-1.jpg" alt=""></th>
+                          <th colspan = "2"><img left= "0%" class="duagambar" width="50%" height="auto" top=" 0%" src="../../static/img-banner2-2.jpg" alt=""></th>
+                          </tr>
+                  </table>
+    </div>
+<br><br><br>
+  <br><br><br>
 <!--  -->
 </div>
 
@@ -326,14 +528,28 @@
   //   width: 200px;
   //   height: 100px;
   // }
+        .pilih-jeniskanan {
+    // background-color: #daf0fff8;
+    // background-position: 0% -50%;
+     align-content: center;
+    // vertical-align: top;
+            height: 20px;
+         width:100%;
+         margin-top:-4%;
+     margin-left:80%;
+    // transform:translate(-50%, -50%);
+
+  }
     .pilih-jenis {
     background-color: #daf0fff8;
-    background-position: -100% 0%;
+    background-position: 0% 0%;
     // align-content: center;
     // vertical-align: top;
+        height: 50px;
          width:100%;
-    // margin-left:50%;
-    // transform:translate(-50%, -50%);
+
+     margin-left:0%;
+    //  transform:translate( 0%, 20%);
 
   }
 .card .card-image,
@@ -362,13 +578,18 @@
     transform:translate(-50%);
 
   }
-    .title {
+    .duagambar{
+          transform:translate(-40%);
+    }
+
+    .titles {
 
     background: url('../../static/img-brand-logo.png') no-repeat;
+        transform:translate(-80%);
     background-position: 100% 15%;
     align-content: center;
     vertical-align: center;
-    width: 100px;
+    width: 400px;
     height: 100px;
 
   }
@@ -388,21 +609,75 @@
     .hero {
       background: rgb(255, 255, 255);
     }
-.ratakiri {
-
-    margin-left:-30%;
+.imgratakiri {
+        // transform:translate(0%, 0%);
+          margin-bottom: 10px;
+        width: 100%;
+    height: 70%;
+    margin-left: 45%;
     font-size: 1rem;
+}
+.imgratakirienam {
+        // transform:translate(0%, 0%);
+          margin-bottom: 10px;
+        width: 120px;
+    height: 120px;
+    margin-left: 0%;
+    font-size: 1rem;
+}
+.barisan-kartu {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(175px,1fr));
+	grid-gap: 0.5em;
+}
+
+.card{
+	height: max-content;
+}
+.ratakiri {
+        transform:translate(0%, -20%);
+    margin-left: 15%;
+      margin-bottom: 10px;
+    font-size: 1rem;
+}
+.imgratakiribawah {
+    top: 20%;
+    margin-left:2%;
+    // font-size: 1rem;
+    //     transform:translate(0%, -30%);
 }
 .ratakiribawah {
     top: 30%;
-    margin-left:-20%;
+    margin-left:-10%;
     font-size: 1rem;
-        transform:translate(0%, -30%);
+        transform:translate(0%, -80%);
+}
+.ratakiribawahlagi {
+    top: 90%;
+    margin-left: 7.7%;
+    font-size: 1rem;
+        transform:translate(0%, 40%);
 }
 .keterangan-sisi {
 
     margin-left:-35%;
     font-size: 1rem;
+}
+.turun {
+    transform:translate(0%, 10%);
+}
+.turun2 {
+    transform:translate(0%, 25%);
+}
+.naik {
+
+    // margin-left:50%;
+    transform:translate(0%, -30%);
+}
+.naik-dua-gambar {
+
+    // margin-left:50%;
+    transform:translate(0%, -50%);
 }
 .img {
      width:100vw;
@@ -433,4 +708,7 @@
     height: 10px;
       color: rgb(0, 0, 0);
     }
+  .harga-diskon{
+  text-decoration: line-through;
+}
 </style>

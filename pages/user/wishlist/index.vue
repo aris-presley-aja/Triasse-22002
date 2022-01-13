@@ -5,15 +5,15 @@
       <div class="card column is-one-quarter" v-for="product in productsInWishlist" :key="product.id">
         <VmProductsList :product="product"></VmProductsList>
       </div>
-      <div class="section" v-if="productsInWishlist.length === 0">
+      <!-- <div class="section" v-if="productsInWishlist.length === 0">
         <p>{{ noProductLabel }}</p>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-import VmProductsList from '@/components/Products';
+// import VmProductsList from '@/components/Products';
 import { getByTitle } from '@/assets/filters';
 
 export default {

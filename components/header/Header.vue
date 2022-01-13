@@ -22,7 +22,7 @@
                   <div class="navbar-item social">
                     <div class="flex-container">
                         <b-nav class="navigasi">
-                        <b-nav-item class="flex-item-left">
+                        <b-nav-item  left="150%" class="flex-item-right">
                           <i class="fas fa-calendar-week" style="font-size:1.4em;color:green"/>
                                 <i class="ngelink is-3 is-flex-mobile">senin-jumat ( 09:00 - 18:00 W.I.B )</i>
 
@@ -118,16 +118,19 @@
   // }
   * {
   box-sizing: border-box;
+
     background-color: #daf0fff8;
 }
 .kepala {
+    // transform:translate(5%, 0%);
+    width:100vw;
   background-color: #daf0fff8;
 }
 .flex-container {
-
+  // transform:translate(5%, 0%);
   justify-content: right;
   font-size: 12px;
-  text-align: center;
+  text-align: right;
 }
 
 .flex-item-left {
@@ -162,11 +165,9 @@
 
   .navigasi {
 
-
-
   width: 100px;
-  margin: 40px;
-  text-align: center;
+  margin: 4px;
+  text-align: right;
   line-height: 75px;
   font-size: 1.2em;
 }
