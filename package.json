@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "VueCommerce Vue.js, Nuxt&Bulma",
   "author": "Aris Priyanto <aris.22002.priyanto@gmail.com>",
-  "scripts": {
+ "scripts": {
+    "start": "nuxt",
+    "serve": "nuxt",
     "dev": "nuxt",
     "build": "nuxt generate"
   },
