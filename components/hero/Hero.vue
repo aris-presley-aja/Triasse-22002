@@ -2,7 +2,7 @@
 <!--  -->
 
 <!--  -->
-  <div class="hero is-small is-bold">
+  <div class="lengket hero is-small is-bold">
                 <a role="button" class="navbar-burger burger" @click="isMenuOpen = !isMenuOpen" aria-label="menu" aria-expanded="false">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
@@ -12,12 +12,18 @@
 
         <div class="container">
 
-          <div  class="navbar-end">
-<div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
-      <div class="container">
-        <ul>
-          <li class="">
+          <div  class="navbar-end
+                                         style=
+
+                                                  position: absolute;
+                                             margin-bottom: 5%;
+                                                    z-index: 1;
+          ">
+    <div class="hero-foot">
+              <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                  <ul>
+                    <li class="">
                                               <span>      <nuxt-link :to="{ name: 'index' }" class="navbar-item">
                                     <h3 class="titles is-3 is-flex-mobile"></h3>
                                             </nuxt-link> </span>
@@ -62,10 +68,18 @@
 
 
           </div>
-                          <div class="img" width="100%">
+                          <div class="img is-fullwidth"
+                               style="
+
+                                              position sticky;
+                                                  position: absolute;
+                                             margin-bottom: 0%;
+                                                    z-index: 1;"
+                          >
                                 <!-- <b-img src="../../static/img-big-banner@3x.jpg" width="120%"> -->
                                 <!-- <b-img src="../../static/img-big-banner@3x.jpg" fluid alt="Responsive image"></b-img> -->
                               <img src="../../static/img-big-banner@3x.jpg">
+
                           </div>
                         <!--  -->
 
@@ -74,7 +88,7 @@
                                                   width:80%;
                                                   position: absolute;
                                                     left: 10%;
-                                                    top: 85%;
+                                                    top: 300%;
                                                     z-index: 1;">
 
                                         <div class="">
@@ -197,7 +211,9 @@
 
       </div>
     </div>
-                    <div align="center" class="turun"  style="background-color: #daf0fff8;">
+                    <div align="center" class="turun"  style="background-color: #daf0fff8;
+                    margin-top: 40%;
+                    ">
                             <h1><b>Mengapa harus Triasse ?</b></h1>
                       <p></p>
                       <h2> Proin Egestas eu dui vestibulum. Suspendisse sit amet sem non nunc tempor tincidunt.</h2>
@@ -265,6 +281,7 @@
                           </div>
 
                       </div>
+
                   </div>
                                   <!--  -->
 
@@ -278,7 +295,7 @@
 
 
     <!-- Your card code: -->
-    <div class="container-cards turun2">
+    <div class="container-cards">
       <div class="title">
         <center>
         <p>Lorem Ipsum Dolor Sit Amet</p>
@@ -470,15 +487,15 @@
                     </center>
             <!-- konten 6 kartu -->
       </div>
-                  <table align="center" width="100%">
+                  <table class="" align="center" width="100%">
                                               <tr align="center">
                           <th colspan = "2"><img align="right" class="" width="50%" height="auto" top=" 0%" src="../../static/img-banner2-1.jpg" alt=""></th>
                           <th colspan = "2"><img left= "0%" class="duagambar" width="50%" height="auto" top=" 0%" src="../../static/img-banner2-2.jpg" alt=""></th>
                           </tr>
                   </table>
     </div>
-<br><br><br>
-  <br><br><br>
+<!-- <br><br><br>
+  <br><br><br> -->
 <!--  -->
 </div>
 
@@ -629,6 +646,9 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(175px,1fr));
 	grid-gap: 0.5em;
+    // justify-content: center;
+      transform:translate(5%, 0%);
+               margin-bottom: 10px;
 }
 
 .card{
@@ -664,7 +684,8 @@
     font-size: 1rem;
 }
 .turun {
-    transform:translate(0%, 10%);
+  margin-bottom: 10%;
+    transform:translate(0%, -20%);
 }
 .turun2 {
     transform:translate(0%, 25%);

@@ -51,6 +51,7 @@ export default {
 
 <style lang="scss" scoped>
   .card {
+    position: sticky;
     margin: 10px;
   }
 </style>

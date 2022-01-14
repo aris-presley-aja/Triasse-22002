@@ -1,5 +1,5 @@
 <template>
-  <div class="kepala">
+  <div class="lengket is-fullwidth">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <!-- <div class="navbar-brand">
                         <nuxt-link :to="{ name: 'index' }" class="navbar-item">
@@ -22,7 +22,7 @@
                   <div class="navbar-item social">
                     <div class="flex-container">
                         <b-nav class="navigasi">
-                        <b-nav-item  left="150%" class="flex-item-right">
+                        <b-nav-item  left="" class="">
                           <i class="fas fa-calendar-week" style="font-size:1.4em;color:green"/>
                                 <i class="ngelink is-3 is-flex-mobile">senin-jumat ( 09:00 - 18:00 W.I.B )</i>
 
@@ -122,12 +122,12 @@
     background-color: #daf0fff8;
 }
 .kepala {
-    // transform:translate(5%, 0%);
+    transform:translate(5%, 0%);
     width:100vw;
   background-color: #daf0fff8;
 }
 .flex-container {
-  // transform:translate(5%, 0%);
+  transform:translate(5%, 0%);
   justify-content: right;
   font-size: 12px;
   text-align: right;
@@ -154,7 +154,9 @@
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
+
   .flex-item-right, .flex-item-left {
+    position: sticky;
     flex: 100%;
   }
 }
@@ -163,8 +165,26 @@
 
   }
 
+ .kepala {
+   position: sticky;
+     background-color: #4788FF;
+  flex-grow: 1;
+  margin: auto;
+  position: flex;
+  width: auto;
+  width: 100px;
+  margin: 4px;
+  text-align: right;
+  line-height: 75px;
+  font-size: 1.2em;
+}
   .navigasi {
-
+    position: sticky;
+     background-color: #4788FF;
+  flex-grow: 1;
+  margin: auto;
+  position: relative;
+  width: auto;
   width: 100px;
   margin: 4px;
   text-align: right;

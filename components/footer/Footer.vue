@@ -1,6 +1,6 @@
 <template>
 
-  <div class="footer">
+  <div class="lengket footer v-tengah is-centered is-fullwidth">
     <div class="columns container">
       <div class="column">
         <p>Berlangganan newsletter spesial promo dan penawaran</p>
@@ -22,7 +22,8 @@ export default {
 
 <style lang="scss" scoped>
  .footer {
-   height: 200px;
+   position: sticky;
+   height: auto;
      width: 100vw;
       display:flex;
     justify-content: stretch;
@@ -31,8 +32,12 @@ export default {
     flex-shrink: 0;
     flex-direction: row;
         z-index: 3;
-   margin-top: 5%;
+   margin-top: 0%;
    background: #00093b;
    color: rgb(255, 255, 255);
+ }
+  .v-tengah {
+    position: sticky;
+    transform:translate( 4.6%, 31%);
  }
 </style>
