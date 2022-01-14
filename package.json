@@ -4,10 +4,9 @@
   "description": "VueCommerce Vue.js, Nuxt&Bulma",
   "author": "Aris Priyanto <aris.22002.priyanto@gmail.com>",
  "scripts": {
-    "start": "nuxt",
-    "serve": "nuxt",
+"serve": "vue-cli-service serve",
+"build": "vue-cli-service build",
     "dev": "nuxt",
-    "build": "nuxt generate"
   },
   "repository": {
     "type": "git",
