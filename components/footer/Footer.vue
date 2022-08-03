@@ -1,6 +1,6 @@
 <template>
 
-  <div class="lengket footer v-tengah is-centered is-fullwidth">
+  <div class="footer v-tengah is-centered is-fullwidth">
     <div class="columns container">
       <div class="column">
         <p>Berlangganan newsletter spesial promo dan penawaran</p>
@@ -38,6 +38,6 @@ export default {
  }
   .v-tengah {
     position: sticky;
-    transform:translate( 4.6%, 31%);
+    transform:translate( 0%, 0%);
  }
 </style>
