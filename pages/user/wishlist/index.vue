@@ -26,7 +26,7 @@ export default {
     }
   },
 
-  components: { VmProductsList },
+  components: { },
 
   computed: {
     productsInWishlist () {
